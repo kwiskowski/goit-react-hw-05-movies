@@ -1,7 +1,7 @@
 import css from './MovieDetails.module.css';
 
 const MovieDetails = () => {
-  return <>MovieDetails</>;
+  return <div className={css.temporaryClass}>MovieDetails</div>;
 };
 
 MovieDetails.propTypes = {};

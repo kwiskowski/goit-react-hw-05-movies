@@ -1,7 +1,7 @@
 import css from './Reviews.module.css';
 
 const Reviews = () => {
-  return <>Reviews</>;
+  return <div className={css.temporaryClass}>Reviews</div>;
 };
 
 Reviews.propTypes = {};
