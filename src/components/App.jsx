@@ -5,6 +5,7 @@ import MovieDetails from './pages/MovieDetails/MovieDetails';
 import Movies from './pages/Movies/Movies';
 import Reviews from './Reviews/Revievs';
 import Cast from './Cast/Cast';
+import { fetchTrendingMovies } from './fetchData/fetchData';
 
 const StyledLink = styled(NavLink)`
   color: black;
@@ -13,6 +14,8 @@ const StyledLink = styled(NavLink)`
     color: orange;
   }
 `;
+
+fetchTrendingMovies();
 
 export const App = () => {
   return (
