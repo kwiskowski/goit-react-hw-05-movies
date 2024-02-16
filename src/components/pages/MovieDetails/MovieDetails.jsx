@@ -1,7 +1,13 @@
+import { Outlet } from 'react-router-dom';
 import css from './MovieDetails.module.css';
 
 const MovieDetails = () => {
-  return <div className={css.temporaryClass}>MovieDetails</div>;
+  return (
+    <div className={css.temporaryClass}>
+      MovieDetails
+      <Outlet />
+    </div>
+  );
 };
 
 MovieDetails.propTypes = {};

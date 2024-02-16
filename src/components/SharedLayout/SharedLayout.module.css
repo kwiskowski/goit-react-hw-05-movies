@@ -1,0 +1,10 @@
+.container {
+  max-width: 1600px;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
