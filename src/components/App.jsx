@@ -7,12 +7,14 @@ import Reviews from './Reviews/Revievs';
 import Cast from './Cast/Cast';
 import { fetchTrendingMovies } from './fetchData/fetchData';
 import css from './App.module.css';
+import { SearchForm } from './SearchForm/SearchForm.jsx';
 
 fetchTrendingMovies();
 
 export const App = () => {
   return (
     <div className={css.appContainer}>
+      <SearchForm />
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
