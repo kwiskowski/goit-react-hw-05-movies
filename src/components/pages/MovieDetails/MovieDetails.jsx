@@ -1,5 +1,5 @@
 import { useParams, useLocation, Link, Outlet } from 'react-router-dom';
-import { fetchMovieDetails } from 'components/fetchData/fetchData';
+import { getMovieDetails } from 'components/fetchData/fetchData';
 import { useState, useEffect } from 'react';
 import css from './MovieDetails.module.css';
 import { HiArrowNarrowLeft } from 'react-icons/hi';
@@ -10,7 +10,7 @@ const MovieDetails = () => {
   const { movieId } = useParams();
 
   useEffect(() => {
-    fetchMovieDetails(movieId).then(data => setMovieDetail(data));
+    getMovieDetails(movieId).then(data => setMovieDetail(data));
   }, [movieId]);
 
   const { original_title, overview, genres, poster_path, vote_average } =
