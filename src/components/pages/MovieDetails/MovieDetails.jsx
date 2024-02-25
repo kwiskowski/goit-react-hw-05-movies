@@ -20,10 +20,10 @@ const MovieDetails = () => {
   return (
     <main>
       <button className={css.button} type="button">
-        <link className={css.linkBack} to={location.state?.from ?? '/'}>
+        <Link className={css.linkBack} to={location.state?.from ?? '/'}>
           <HiArrowNarrowLeft size={16} />
           Go back
-        </link>
+        </Link>
       </button>
       <div className={css.movieBox}>
         <img
@@ -72,16 +72,3 @@ const MovieDetails = () => {
 };
 
 export default MovieDetails;
-
-// const MovieDetails = () => {
-//   return (
-//     <div className={css.temporaryClass}>
-//       MovieDetails
-//       <Outlet />
-//     </div>
-//   );
-// };
-
-// MovieDetails.propTypes = {};
-
-// export default MovieDetails;
