@@ -1,3 +1,26 @@
-.temporaryClass {
-  text-decoration: none;
+.castList {
+  list-style-type: none;
+}
+
+.castListItem {
+  padding-bottom: 10px;
+}
+
+.characterName {
+  text-decoration: underline;
+}
+
+.characterBox {
+  -webkit-border-radius: 10px; /*Safari, Chrome*/
+  -moz-border-radius: 10px; /*Firefox*/
+  border-radius: 10px;
+
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#808080)'; /*IE 8*/
+  -moz-box-shadow: -30px -67px 4px 19px rgba(176, 176, 176, 0),
+    3px 3px 3px -1px #808080; /*FF 3.5+*/
+  -webkit-box-shadow: -30px -67px 4px 19px rgba(176, 176, 176, 0),
+    3px 3px 3px -1px #808080; /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: -30px -67px 4px 19px rgba(176, 176, 176, 0),
+    3px 3px 3px -1px #808080; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#808080); /*IE 5.5-7*/
 }

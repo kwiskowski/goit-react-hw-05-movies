@@ -15,6 +15,7 @@ const Cast = () => {
         ? castList.map(({ id, name, profile_path, character }) => (
             <li className={css.castListItem} key={id}>
               <img
+                className={css.characterBox}
                 src={
                   profile_path
                     ? `https://image.tmdb.org/t/p/w200${profile_path}`
@@ -26,7 +27,7 @@ const Cast = () => {
                 height={180}
               />
               <h1 className={css.characterName}>{name}</h1>
-              <div className={css.characterBox}> Character: {character}</div>
+              <label> Character: {character}</label>
             </li>
           ))
         : "Sorry, there isn't any info :("}
@@ -35,13 +36,3 @@ const Cast = () => {
 };
 
 export default Cast;
-
-// import css from './Cast.module.css';
-
-// const Cast = () => {
-//   return <div className={css.temporaryClass}>Cast</div>;
-// };
-
-// Cast.propTypes = {};
-
-// export default Cast;
